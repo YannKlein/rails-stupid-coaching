@@ -1,0 +1,10 @@
+<div class="m-2" style="width: 400px;">
+  <%= form_tag("/answer", method: "get") do %>
+    <div class="form-group">
+    <%= label_tag :question, "Ask a question:" %>
+    <%= text_field_tag :question, "", class: "form-control" %>
+    <%= submit_tag "Ask!", class: "btn btn-primary mt-2" %>
+    </div>
+  <% end %>
+</div>
+
